@@ -1,0 +1,22 @@
+<html>
+    <head></head>
+    <body>
+        <script type="text/javascript" src="./index.js"></script>
+
+        <div>
+            <div>
+                <a href="#/home"> Home </a> <br/>
+                <a href="#/home/blah"> Home -> blah </a> <br/>
+                <a href="#/contact"> Contact </a>
+            </div>
+
+            <k-route when="/home">
+                home
+                <k-route when="/blah"> blah </k-route>
+            </k-route>
+            <k-route when="/contact">
+                contact info
+            </k-route>
+        </div>
+    </body>
+</html>
