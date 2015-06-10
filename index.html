@@ -5,17 +5,25 @@
 
         <div>
             <div>
-                <a href="#/home"> Home </a> <br/>
-                <a href="#/home/blah"> Home -> blah </a> <br/>
-                <a href="#/contact"> Contact </a>
+                <a href="#!/home"> Home </a> |
+                <a href="#!/contact"> Contact </a>
             </div>
 
             <k-route when="/home">
-                home
-                <k-route when="/blah"> blah </k-route>
+                <h2> Home page </h2>
+                <div>
+                    <a href="#!/home/sector1"> Sector 1 </a> |
+                    <a href="#!/home/sector2"> Sector 2 </a> |
+                </div>
+                <k-route when="/sector1">
+                    Sector 1
+                </k-route>
+                <k-route when="/sector2">
+                    Sector 2
+                </k-route>
             </k-route>
             <k-route when="/contact">
-                contact info
+                Contact info
             </k-route>
         </div>
     </body>
